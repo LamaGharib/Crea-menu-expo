@@ -14,7 +14,7 @@ import CheckoutScreen from "./CheckoutScreen";
 
 const CartScreen = () => {
   const { cart, total, setTotal, setCart } = useContext(MenuContext);
- 
+
   return (
     <ImageBackground source={require("../assets/CREA.png")} style={styles.img}>
       <ScrollView style={styles.container}>
@@ -50,8 +50,6 @@ const CartScreen = () => {
           </Text>
         </TouchableOpacity>
       </ScrollView>
-
-      <CheckoutScreen />
     </ImageBackground>
   );
 };
